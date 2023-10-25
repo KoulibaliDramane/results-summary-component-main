@@ -1,0 +1,213 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    }
+
+*{
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+main {
+    width: min-content;
+    height: min-content;
+}
+
+
+section {
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 30px rgba(72, 0, 255, 0.088);
+}
+
+.your-resust , .summary{
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+/*-----| YOUR RESULT |-----*/
+
+.your-resust {
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    color: white;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--Violet-blue-circle) , var(--Persian-blue-circle));
+}
+
+.Light-lavender {
+    color: var(--Light-lavender);
+}
+
+
+#gret {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 20px;
+}
+#text {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 0 20px;
+    margin: 10px 0 30px;
+
+}
+
+#nbr {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#title1 {
+    font-size: 18px;
+    margin: 30px;
+}
+#title2 {
+    font-size: 18px;
+    margin: 30px 0 20px;
+    width: 80%;
+    text-align: left;
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
+}
+
+/*-----| SUMMARY |-----*/
+
+.list {
+    display: flex;
+    padding: 15px;
+    margin: 10px 30px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+p {
+    display: flex;
+    align-items: center;
+}
+
+.list-box {
+    width: 100%;
+    font-weight: 700;
+}
+
+.button-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 80%;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--Dark-gray-blue);
+    border: 0;
+    color: white;
+}
+button:hover {
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+}
+svg {
+    margin-right: 10px;
+}
+
+#item1{
+    color: var(--Light-red);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+#item2{
+    color: var(--Orangey-yellow);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+#item3{
+    color: var(--Green-teal);
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+#item4{
+    color: var(--Cobalt-blue);
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.note1 {
+    color: var(--Dark-gray-blue);
+}
+
+.note2 {
+    color: hsla(224, 30%, 27%, 0.5);
+    margin-left: 10px;
+}
+
+@media (max-width: 600px){
+    section{
+        flex-direction: column;
+        box-shadow: none;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .your-resust{
+        border-radius: 0 0 20px 20px;
+        height: 350px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    #title1 {
+        margin: 10px;
+    }
+    #gret {
+        margin: 10px;
+    }
+    .description {
+        width: 200px;
+    }
+    #text {
+        display: flex;
+    }
+    #nbr {
+        font-size: 40px;
+    }
+}
